@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A2P9 {
+public class P71E9 {
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
         int bought, sold;

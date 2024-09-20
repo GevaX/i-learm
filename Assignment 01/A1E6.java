@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A1P6 {
+public class A1E6 {
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter number of day working hours for month: ");

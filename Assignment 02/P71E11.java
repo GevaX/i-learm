@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A2P11 {
+public class P71E11 {
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
         int drivingSpeed, allowedSpeed;

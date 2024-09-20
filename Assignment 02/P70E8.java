@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A2P8 {
+public class P70E8 {
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
         double workingHours, absences, salary, salaryPerHour;

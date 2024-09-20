@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A2P7 {
+public class P70E7 {
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter two hights.");

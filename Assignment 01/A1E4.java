@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A1P4 {
+public class A1E4 {
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter three numbers: ");

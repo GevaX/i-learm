@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class A1P3 {
+class A1E3 {
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.print("Enter Number: ");

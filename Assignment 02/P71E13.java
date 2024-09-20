@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A2P13 {
+public class P71E13 {
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
         int a, b, c;
