@@ -10,7 +10,7 @@ public class P117E19 {
             System.out.printf("Day %d: %n", i);
             currentTemp = reader.nextDouble();
 
-            if (i > 0) {
+            if (i > 1) {
                 if (currentTemp > previousTemp) {
                     System.out.println("The temperature today is higher than yesterday.");
                 } else if (currentTemp < previousTemp) {
