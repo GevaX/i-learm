@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Moshiko🍕</h1>
+        <p>Fill in your pizza order details below:</p>
+        <form>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required />
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label>Delivery Method:</label>
+            <div class="method">
+                <div>
+                    <input type="radio" id="pickup" name="method" value="pickup" required>
+                    <label for="pickup">Pickup</label>
+                </div>
+                <div>
+                    <input type="radio" id="delivery" name="method" value="delivery" required>
+                    <label for="delivery">Delivery</label>
+                </div>
+            </div>
+
+            <div class="toppings-container">
+                <label class="bold">Choose your toppings:</label>
+                <div>
+                    <input type="checkbox" id="olives" name="toppings" value="olives">
+                    <label for="olives">Olives</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="corn" name="toppings" value="corn">
+                    <label for="corn">Corn</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bubalus" name="toppings" value="bubalus">
+                    <label for="bubalus">Bubalus</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
