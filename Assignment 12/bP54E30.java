@@ -10,6 +10,6 @@ public class bP54E30 {
                 c = 1;
             }
         }
-        return maxC > arr.length / 2;  
+        return Math.max(maxC, c) > arr.length / 2;  
     }
 }
