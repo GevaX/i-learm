@@ -1,0 +1,21 @@
+﻿table {
+    margin: 10px 0;
+}
+
+.red {
+    border-color: red;
+}
+
+.red td {
+    padding: 10px;
+    text-align: center;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.blue td {
+    padding: 10px;
+    text-align: center;
+}
