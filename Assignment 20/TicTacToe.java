@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-class Program {
+public class TicTacToe {
     public static Scanner reader = new Scanner(System.in);
 
     public static void printBoard(char[][] board) {
