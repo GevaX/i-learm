@@ -34,10 +34,8 @@ public class dP161E22 {
         while (!heap.isEmpty() && ((foundX < 1 || foundY < 1))) {
             Domino d = heap.pop();
 
-            if (d.getX() == x) foundX++;
-            if (d.getY() == x) foundX++;
-            if (d.getX() == y) foundY++;
-            if (d.getY() == y) foundY++;
+            if (d.getX() == x || d.getY() == x) foundX++;
+            if (d.getX() == y || d.getY() == y) foundY++;
             temp.push(d);
         }
 
