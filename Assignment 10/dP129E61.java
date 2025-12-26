@@ -1,11 +1,11 @@
-import unit4.collectionsLib.DoubleSidedNode;
+import unit4.collectionsLib.DSNode;
 
 public class dP129E61 {
     // Standart slow-fast meathod
     // From dP111E36.java
-    public static <T> DoubleSidedNode<T> getMiddleS(DoubleSidedNode<T> lst) {
-        DoubleSidedNode<T> slow = lst;
-        DoubleSidedNode<T> fast = lst;
+    public static <T> DSNode<T> getMiddleS(DSNode<T> lst) {
+        DSNode<T> slow = lst;
+        DSNode<T> fast = lst;
 
         while (fast != null && fast.hasNext()) {
             slow = slow.getNext();
@@ -16,15 +16,15 @@ public class dP129E61 {
     // Time complexity: O(n/2) = O(n)
 
     // Doubly linked inward meathod
-    public static <T> DoubleSidedNode<T> getMiddleD(DoubleSidedNode<T> lst) {
+    public static <T> DSNode<T> getMiddleD(DSNode<T> lst) {
         if (lst == null || lst.getNext() == null) return lst; // empty or single node
-        DoubleSidedNode<T> tail = lst;
+        DSNode<T> tail = lst;
         while (tail.hasNext()) {
             tail = tail.getNext();
         }
 
-        DoubleSidedNode<T> left = lst;
-        DoubleSidedNode<T> right = tail;
+        DSNode<T> left = lst;
+        DSNode<T> right = tail;
         while (left != right && left.getPrev() != right) {
             left = left.getNext();
             right = right.getPrev();

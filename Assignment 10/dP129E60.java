@@ -1,15 +1,15 @@
-import unit4.collectionsLib.DoubleSidedNode;
+import unit4.collectionsLib.DSNode;
 
 public class dP129E60 {
-    public boolean isPalindrome(DoubleSidedNode<Character> lst) {
+    public boolean isPalindrome(DSNode<Character> lst) {
         if (lst == null || lst.getNext() == null) return true;
-        DoubleSidedNode<Character> tail = lst;
+        DSNode<Character> tail = lst;
         while (tail.hasNext()) {
             tail = tail.getNext();
         }
 
-        DoubleSidedNode<Character> left = lst;
-        DoubleSidedNode<Character> right = tail;
+        DSNode<Character> left = lst;
+        DSNode<Character> right = tail;
         while (left != right && left.getPrev() != right) {
             if (left.getValue() != right.getValue()) {
                 return false;

@@ -1,10 +1,10 @@
-import unit4.collectionsLib.DoubleSidedNode;
+import unit4.collectionsLib.DSNode;
 
 public class dP129E64 {
-    public static void insertAtMiddle(DoubleSidedNode<Integer> lst1, DoubleSidedNode<Integer> lst2) {
+    public static void insertAtMiddle(DSNode<Integer> lst1, DSNode<Integer> lst2) {
         // Find middle
-        DoubleSidedNode<Integer> slow = lst1;
-        DoubleSidedNode<Integer> fast = lst1.getNext();
+        DSNode<Integer> slow = lst1;
+        DSNode<Integer> fast = lst1.getNext();
 
         while (fast != null && fast.hasNext()) {
             slow = slow.getNext();
@@ -12,12 +12,12 @@ public class dP129E64 {
         } // slow is the first middle
 
         // Insert list after slow
-        DoubleSidedNode<Integer> after = slow.getNext();
+        DSNode<Integer> after = slow.getNext();
         slow.setNext(lst2);
         lst2.setPrev(slow);
 
         // Move to end of lst2
-        DoubleSidedNode<Integer> tail = lst2;
+        DSNode<Integer> tail = lst2;
         while (tail.hasNext()) {
             tail = tail.getNext();
         }

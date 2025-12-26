@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-import unit4.collectionsLib.DoubleSidedNode;
+import unit4.collectionsLib.DSNode;
 
 public class dP129E63 {
     public static Scanner reader = new Scanner(System.in);
 
-    public static DoubleSidedNode<Integer> buildInvertedList() {
+    public static DSNode<Integer> buildInvertedList() {
         System.out.println("Enter number (-999 to end):");
         int input = reader.nextInt();
 
-        DoubleSidedNode<Integer> lst = null;
+        DSNode<Integer> lst = null;
         while (input != -999) {
-            DoubleSidedNode<Integer> newNode = new DoubleSidedNode<>(input);
+            DSNode<Integer> newNode = new DSNode<>(input);
             if (lst != null) {
                 newNode.setNext(lst);
                 lst.setPrev(newNode);
