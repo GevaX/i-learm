@@ -8,7 +8,7 @@ public class dP213E39 {
         Queue<BinNode<Integer>> q = new Queue<>();
         Queue<Integer> depth = new Queue<>();
         q.insert(tr);
-        depth.insert(1);
+        depth.insert(0);
 
         while (!q.isEmpty()) {
             BinNode<Integer> b = q.remove();
