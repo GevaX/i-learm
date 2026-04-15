@@ -63,4 +63,6 @@ class Pole {
             rings.push(temp.pop());
         }
     }
+    // Time complexity: O(n), each element is pushed and popped a constant number of
+    // times.
 }
